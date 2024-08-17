@@ -1,1 +1,53 @@
-<p>tech works!</p>
+<div class="py-2 px-4 max-h-[27rem] overflow-y-scroll">
+    <div>
+        <h3 class="text-2xl font-extrabold">Programming Languages</h3>
+        <div class="flex flex-row gap-5">
+            @for (lang of languageIcons; track lang.url) {
+                <img src="{{ lang.url }}" class="h-14 w-14" />
+            }
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-2xl font-extrabold">Frameworks / Libraries</h3>
+        <div class="flex flex-row gap-5">
+            @for (lang of frameWork; track lang.url) {
+                <img src="{{ lang.url }}" class="h-14 w-14" />
+            }
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-2xl font-extrabold">Database</h3>
+        <div class="flex flex-row gap-5">
+            @for (lang of databaseIcons; track lang.url) {
+                <img src="{{ lang.url }}" class="h-14 w-14" />
+            }
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-2xl font-extrabold">Cloud Services</h3>
+        <div class="flex flex-row gap-5">
+            @for (lang of cloudIcons; track lang.url) {
+                <img src="{{ lang.url }}" class="h-14 w-14" />
+            }
+        </div>
+    </div>
+    <div>
+        <h3 class="text-2xl font-extrabold">DevOp Tools</h3>
+        <div class="flex flex-row gap-5">
+            @for (lang of devOpToolsIcons; track lang.url) {
+                <img src="{{ lang.url }}" class="h-14 w-14" />
+            }
+        </div>
+    </div>
+    <div>
+        <h3 class="text-2xl font-extrabold">Additional Tools</h3>
+        <div class="flex flex-row gap-5">
+            @for (lang of additionalToolIcons; track lang.url) {
+                <img src="{{ lang.url }}" class="h-14 w-14" />
+            }
+        </div>
+    </div>
+</div>
