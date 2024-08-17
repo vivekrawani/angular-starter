@@ -56,8 +56,7 @@
                 </div>
                 <div class="font-bold">{{ iconDetails.fileName }}</div>
             </div>
-
-            <p>Some text in the modal.</p>
+            <ng-container *ngComponentOutlet="getComponent()"> </ng-container>
         </div>
     </div>
 }
